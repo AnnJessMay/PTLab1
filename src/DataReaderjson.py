@@ -2,10 +2,11 @@ from Types import DataType
 from DataReader import DataReader
 import json
 
+
 class DataReaderJSON(DataReader):
 
     def __init__(self) -> None:
-        self.students: DataType = {}        
+        self.students: DataType = {}
 
     def read(self, path: str) -> DataType:
         with open(path, encoding='utf-8') as file:
@@ -16,8 +17,3 @@ class DataReaderJSON(DataReader):
                     temp_list.append((subject, data[fio][subject]))
                 self.students[fio] = temp_list
             return self.students
-
-
-if __name__ == '__main__':
-    data = DataReaderJSON().read('C:\\Users\\79616\\Desktop\\git\\PTLab1\\rating\\data\\data.json')
-    print(data)
