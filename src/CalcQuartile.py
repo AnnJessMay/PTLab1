@@ -13,11 +13,9 @@ class CalcQuartile:
         rating = CalcRating(self.data).calc()
         sorted_rating = sorted(rating.items(), key=lambda x: x[1],
                                reverse=True)
-        median_q_2 = statistics.median([x[1] for x in sorted_rating])
-        q_2 = list(filter(lambda x: median_q_2 < x[1], sorted_rating))
-        median_q_3 = statistics.median(x[1] for x in q_2)
-        q_3 = filter(lambda x: median_q_3 < x[1], q_2)
-        return dict(q_3)
+        quartile_rating = statistics.quantiles(sorted_rating.values())
+        quartile_rating2 = filter(lambda x: quartile_rating < x[1], sorted_rating)
+        return dict(quartile_rating2)
 
 
 if __name__ == "__main__":
