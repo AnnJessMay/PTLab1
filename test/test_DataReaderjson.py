@@ -4,7 +4,7 @@ from src.Types import DataType
 from src.DataReaderjson import DataReaderJSON
 
 
-class TestDataReaderXML:
+class TestDataReaderJSON:
     @pytest.fixture()
     def file_and_data_content(self) -> tuple[str, DataType]:
         root_dir = os.path.dirname(os.path.abspath(__file__))
