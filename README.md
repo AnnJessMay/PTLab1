@@ -26,7 +26,7 @@
 
 
 ## UML-диаграмма:
-![image](https://github.com/AnnJessMay/PTLab1/assets/122811211/c3b3ece0-47c4-49be-bff3-c5ce18d56d8b)
+![image](https://github.com/AnnJessMay/PTLab1/assets/122811211/f6c0b5d0-2142-4ddf-a6c6-f8547a823eff)
 
 ## Вывод:
 В ходе выполнения лабораторной работы мною были изучены системы контроля версий Git, понятия CI/CD,
