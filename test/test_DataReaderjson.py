@@ -22,4 +22,3 @@ class TestDataReaderJSON:
     def test_read(self, file_and_data_content: tuple[str, DataType]) -> None:
         file_content = DataReaderJSON().read(file_and_data_content[0])
         assert file_content == file_and_data_content[1]
-
