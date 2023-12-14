@@ -6,7 +6,6 @@ import statistics
 class CalcQuartile:
     def __init__(self, data: DataType):
         self.data = data
-        self.debt_count = 0
 
     def calc(self):
         rating = CalcRating(self.data).calc()
